@@ -5,7 +5,7 @@
 📌 Open to collaborations & opportunities  
 
 ## 📂 Featured Projects
-- 🔗 [Credit Cars Fraud Detection](GitHub Repository Link)
+- 🔗 [Credit Card Fraud Detection](https://github.com/Upasana20105/credit_card_fraud_detection)
 - 🔗 [Project 2 Name](GitHub Repository Link)
 - 🔗 [Portfolio Website (if any)](Your Portfolio Link)
 
