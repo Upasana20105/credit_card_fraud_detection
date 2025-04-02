@@ -1,4 +1,3 @@
-# credit_card_fraud_detection.py (Machine Learning Model)
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -6,11 +5,11 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 import joblib
 
-def train_and_save_model(data_path, model_path):
+def train_and_save_model(data_path, model_path, selected_features):
     """Trains a Random Forest model and saves it."""
     try:
         df = pd.read_csv(data_path)
-        X = df.drop('Class', axis=1)  # 'Class' is the target variable (0: legitimate, 1: fraud)
+        X = df[selected_features]  # 'Class' is the target variable (0: legitimate, 1: fraud)
         y = df['Class']
 
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -41,8 +40,11 @@ def load_and_predict(model_path, input_data):
 if __name__ == "__main__":
     data_path = "creditcard.csv"  # Replace with your dataset path
     model_path = "fraud_detection_model.joblib"
+    selected_features = [
+        "V14", "V17", "V12", "V10", "Amount"
+    ]
 
-    if train_and_save_model(data_path, model_path):
+    if train_and_save_model(data_path, model_path, selected_features):
         print("Model trained and saved successfully.")
     else:
         print("Model training failed.")
