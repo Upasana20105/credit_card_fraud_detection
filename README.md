@@ -6,7 +6,7 @@
 
 ## 📂 Featured Projects
 - 🔗 [Credit Card Fraud Detection](https://github.com/Upasana20105/credit_card_fraud_detection)
-- 🔗 [Portfolio Website]((https://upasana-prajapati.vercel.app/))
+- 🔗 [Portfolio Website](https://upasana-prajapati.vercel.app/)
 
 ## 📫 Connect with Me
 - 💼 [LinkedIn](www.linkedin.com/in/upasana-prajapati)
